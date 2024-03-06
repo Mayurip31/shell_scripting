@@ -16,17 +16,12 @@ ssh-keygen
 
 # Add Private_IP into hosts file
 
-sudo echo "172.31.47.18" >> "/etc/ansible/hosts"
-sudo echo "172.31.35.31" >> "/etc/ansible/hosts"
-sudo echo "172.31.44.137" >> "/etc/ansible/hosts"
+sudo echo "Node-1_IP" >> "/etc/ansible/hosts"
+sudo echo "Node-2_IP" >> "/etc/ansible/hosts"
+sudo echo "Node-3_IP" >> "/etc/ansible/hosts"
 
-# Disable configuration file of ansible (ansible.cfg)
-
-sudo ansible-config init --disabled -t all > ansible.cfg
 
 # Adding some changes in config file
-
-sudo -i
 
 sudo echo "[defaults]" >> "/etc/ansible/ansible.cfg"
 sudo echo "host_key_checking = False" >> "/etc/ansible/ansible.cfg"
