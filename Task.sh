@@ -22,4 +22,5 @@ cat file2.txt
 cat file3.txt
 
 ## To run script 
+
 bash file.sh
