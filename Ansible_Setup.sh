@@ -12,8 +12,6 @@ sudo apt-get install -y ansible
 
 ssh-keygen
 
-#ssh-copy-id ubuntu@172.31.35.31
-
 # Add Private_IP into hosts file
 
 sudo echo "Node-1_IP" >> "/etc/ansible/hosts"
